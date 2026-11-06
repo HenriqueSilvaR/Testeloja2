@@ -8,8 +8,8 @@
 <meta name="theme-color" content="#000000">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Fut Store BH">
-<meta property="og:title" content="Fut Store BH | Mais que camisas, uma paixão!">
-<meta property="og:description" content="Camisas de futebol, basquete, feminino, infantil, corta vento e conjuntos. Veja o catálogo e peça pelo WhatsApp.">
+<meta property="og:title" content="Fut Store BH">
+<meta property="og:description" content="A camisa do seu time está aqui. Veja o catálogo e peça pelo WhatsApp.">
 <meta property="og:image" content="https://henriquesilvar.github.io/Testeloja/preview.jpg?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -271,7 +271,7 @@ details p{color:var(--suave);padding:0 0 18px}
     <div class="wrap">
       <span class="emblema-wrap"><img class="emblema" src="logo-hero.webp" width="300" height="300" alt="Emblema dourado Fut Store BH" fetchpriority="high" decoding="async"></span>
       <h1>Fut Store BH</h1>
-      <p class="slogan">Mais que camisas, uma paixão!</p>
+      <p class="slogan">Mais que camisas, uma paixão !</p>
       <div class="botoes">
         <a class="btn btn-ouro" href="#futebol">Ver catálogo de futebol</a>
         <a class="btn btn-borda" id="zapHero" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-zap"/></svg>Falar no WhatsApp</a>
@@ -700,7 +700,7 @@ $("#promoX").onclick = () => $("#promo").hidden = true;
 
 /* Compartilhar a loja */
 $("#btnShare").onclick = async () => {
-  const dados = { title: CONFIG.nomeLoja, text: CONFIG.nomeLoja + ": Sua camisa de time está aqui!", url: location.href.split("#")[0] };
+  const dados = { title: CONFIG.nomeLoja, text: CONFIG.nomeLoja + ":", url: location.href.split("#")[0] };
   try { if (navigator.share) { await navigator.share(dados); return; } }
   catch (e) { if (e.name === "AbortError") return; }
   try { await navigator.clipboard.writeText(dados.url); aviso("Link copiado!"); }
